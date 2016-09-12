@@ -1,0 +1,1181 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\InterCom.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NEXT                ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ADD                 ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_DEL                 ICON    DISCARDABLE     "res\\ico00005.ico"
+IDI_EDIT                ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_FIRST               ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_LAST                ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_PREV                ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_PUNKT               ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_PLAN                ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_DEFINE              ICON    DISCARDABLE     "res\\ico00009.ico"
+IDI_PHOTO               ICON    DISCARDABLE     "res\\ico00010.ico"
+IDI_CLIP                ICON    DISCARDABLE     "res\\ico00011.ico"
+IDI_ICON                ICON    DISCARDABLE     "res\\ico00012.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DU                  BITMAP  DISCARDABLE     "res\\DarkUn_3.bmp"
+IDB_PLOGO               BITMAP  DISCARDABLE     "res\\plogo.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "splash.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_COMMERCE            BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        POPUP "&Режим работы"
+        BEGIN
+            MENUITEM "&Администратор",              ID_FILE_MODE_ADMIN
+            MENUITEM "&Оператор",                   ID_FILE_MODE_OPERATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Экспорт данных"
+        BEGIN
+            MENUITEM "&Печатные издания",           ID_FILE_EXPORT_PRESS
+            MENUITEM "&Сеть Интернет",              ID_FILE_EXPORT_INTERNET
+            MENUITEM "&Формат XML",                 ID_FILE_EXPORT_XML
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Печать...\tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "Пред&варительный просмотр",   ID_FILE_PRINT_PREVIEW
+        MENUITEM "Пара&метры страницы",         ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "&Правка"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Листинги"
+    BEGIN
+        MENUITEM "&Квартиры на продажу",        ID_LISTINGS_FLATS_FS
+        MENUITEM "К&омнаты на продажу",         ID_LISTINGS_ROOMS_FS
+        MENUITEM "К&вартиры в строящихся домах", ID_LISTINGS_FLATSINBH
+        MENUITEM SEPARATOR
+        MENUITEM "Квартиры в &аренду",          ID_LISTINGS_FLATS_A
+        MENUITEM "Ко&мнаты в аренду",           ID_LISTINGS_ROOMS_A
+    END
+    POPUP "&Записи"
+    BEGIN
+        MENUITEM "&Добавление новой записи",    ID_RECORD_ADD
+        MENUITEM "&Редактирование текущей записи", ID_RECORD_EDIT_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "&Удаление текущей записи",    ID_RECORD_DELETE_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "Удаление &всех записей",      ID_RECORD_DELETE_ALL
+    END
+    POPUP "С&ервис"
+    BEGIN
+        MENUITEM "С&писок агентов",             ID_SERVICE_AGENTS
+        MENUITEM "Список телефонов",            ID_SERVICE_APHONES
+        MENUITEM SEPARATOR
+        POPUP "&Справочники"
+        BEGIN
+            MENUITEM "&Типы домов",                 ID_SERVICE_SPR_HTYPES
+            MENUITEM "Типы &санузлов",              ID_SERVICE_SPR_WC
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Настройки",                  ID_SERVICE_OPTIONS
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О программе...",             ID_APP_ABOUT
+    END
+END
+
+IDR_COMMERCE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        POPUP "&Режим работы"
+        BEGIN
+            MENUITEM "&Администратор",              ID_FILE_MODE_ADMIN
+            MENUITEM "&Оператор",                   ID_FILE_MODE_OPERATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Экспорт данных"
+        BEGIN
+            MENUITEM "&Печатные издания",           ID_FILE_EXPORT_PRESS
+            MENUITEM "&Сеть Интернет",              ID_FILE_EXPORT_INTERNET
+            MENUITEM "&Формат XML",                 ID_FILE_EXPORT_XML
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Печать...\tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "Пред&варительный просмотр",   ID_FILE_PRINT_PREVIEW
+        MENUITEM "Пара&метры страницы",         ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "&Правка"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Панель инструментов",        ID_VIEW_TOOLBAR
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Листинги"
+    BEGIN
+        MENUITEM "&Продажа",                    ID_LISTINGS_COM_FS
+        MENUITEM "&Аренда",                     ID_LISTINGS_COM_FR
+    END
+    POPUP "&Записи"
+    BEGIN
+        MENUITEM "&Добавление новой записи",    ID_RECORD_ADD
+        MENUITEM "&Редактирование текущей записи", ID_RECORD_EDIT_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "&Удаление текущей записи",    ID_RECORD_DELETE_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "Удаление &всех записей",      ID_RECORD_DELETE_ALL
+    END
+    POPUP "С&ервис"
+    BEGIN
+        MENUITEM "С&писок агентов",             ID_SERVICE_AGENTS
+        MENUITEM "Список телефонов",            ID_SERVICE_APHONES
+        MENUITEM SEPARATOR
+        POPUP "&Справочники"
+        BEGIN
+            MENUITEM "&Типы объектов",              ID_SERVICE_SPR_OBJTYPES
+            MENUITEM "&Состояние",                  ID_SERVICE_SPR_CONDITION
+            MENUITEM "&Назначение",                 ID_SERVICE_SPR_APPOINTMENT
+
+            MENUITEM "&Подъезд",                    ID_SERVICE_SPR_DOORWAY
+            MENUITEM "&Вход",                       ID_SERVICE_SPR_ENTRANCE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Настройки",                  ID_SERVICE_OPTIONS
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О программе...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 393, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе InterCom RE..."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,28,15,21,20
+    LTEXT           "Dark Unicorn InterCom RE Multiple Listing System Version 1.0",
+                    IDC_STATIC,87,13,195,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003 Dark Unicorn Studio",IDC_STATIC,87,
+                    25,135,8
+    DEFPUSHBUTTON   "OK",IDOK,336,7,50,14,WS_GROUP
+    CONTROL         IDI_PLAN,IDB_DU,"Static",SS_BITMAP | SS_REALSIZEIMAGE,
+                    285,104,101,29,WS_EX_STATICEDGE
+    CONTROL         IDI_DEFINE,IDC_STATIC,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE,28,44,358,44
+END
+
+IDD_CERROR DIALOGEX 0, 0, 285, 161
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Ошибка:"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Закрыть",IDOK,228,140,50,14
+    LISTBOX         IDC_LBXST,14,17,257,118,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "При заполнении карточки были допущены следующие ошибки:",
+                    IDC_STATIC,14,7,257,10
+END
+
+IDD_FIBH DIALOGEX 0, 0, 499, 154
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Квартиры в новых и строящихся домах"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_AGENT,31,7,96,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PHONE,169,7,73,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ROOMS,327,7,28,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_R1,19,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R2,55,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R3,91,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R4,127,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R5,163,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R6,199,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R7,235,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R8,271,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R9,307,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R10,343,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R11,19,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R12,55,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R13,91,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R14,127,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R15,163,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R16,199,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R17,235,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R18,271,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R19,307,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R20,343,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_SKITCHEN,419,34,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SGENERAL,419,55,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLOOR,31,81,19,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FLOORS,88,81,21,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_HOUSETYPE,139,80,38,110,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WC,206,80,31,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_COSTFROM,276,80,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_FORWHAT,327,80,47,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DISTRICT,407,80,85,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_METRO,52,96,88,125,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DISTANCE,174,96,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_INWHAT,204,96,41,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ADDRESS,277,96,215,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUILDINGEND,83,112,75,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCRIPTION,268,112,224,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Сохранить",ID_SAVE,276,132,64,15,BS_FLAT
+    PUSHBUTTON      "Очистить",ID_CLEAR,341,132,64,15,BS_FLAT
+    PUSHBUTTON      "Закрыть",IDCANCEL,414,132,78,15,BS_FLAT
+    PUSHBUTTON      "Добавить",ID_ADD,146,132,64,15,BS_FLAT
+    PUSHBUTTON      "Удалить",ID_DELETE,211,132,64,15,BS_FLAT
+    PUSHBUTTON      "",ID_FIRST,7,132,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_PREV,31,132,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_NEXT,56,132,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_LAST,80,132,23,15,BS_FLAT
+    LTEXT           "Агент:",IDC_STATIC,7,10,22,8
+    LTEXT           "Телефон:",IDC_STATIC,134,9,33,8
+    LTEXT           "Количество комнат:",IDC_STATIC,253,9,69,8
+    GROUPBOX        "Жилая площадь по комнатам (м.кв.)",IDC_STATIC,7,24,373,
+                    53
+    LTEXT           "S кухни:",IDC_STATIC,386,36,31,9
+    LTEXT           "S общая:",IDC_STATIC,386,57,31,9
+    LTEXT           "Этаж:",IDC_STATIC,7,83,20,9
+    LTEXT           "Этажей:",IDC_STATIC,57,83,29,9
+    LTEXT           "С/У:",IDC_STATIC,186,83,18,9
+    LTEXT           "Дом:",IDC_STATIC,117,83,19,9
+    LTEXT           "Цена от:",IDC_STATIC,243,83,30,9
+    LTEXT           "За:",IDC_STATIC,314,83,11,9
+    LTEXT           "Район:",IDC_STATIC,381,83,22,8
+    LTEXT           "М / тр. узел:",IDC_STATIC,7,99,43,8
+    LTEXT           "Расст-е:",IDC_STATIC,143,99,29,8
+    LTEXT           "Адрес:",IDC_STATIC,251,98,24,8
+    LTEXT           "Окончание строит-ва:",IDC_STATIC,7,115,74,8
+    LTEXT           "Дополнительные сведения:",IDC_STATIC,167,115,96,8
+END
+
+IDD_FFS DIALOGEX 0, 0, 499, 154
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Квартиры на продажу"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_AGENT,31,7,96,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PHONE,169,7,73,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ROOMS,327,7,28,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_R1,19,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R2,55,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R3,91,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R4,127,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R5,163,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R6,199,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R7,235,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R8,271,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R9,307,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R10,343,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R11,19,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R12,55,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R13,91,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R14,127,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R15,163,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R16,199,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R17,235,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R18,271,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R19,307,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R20,343,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_SKITCHEN,419,34,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SGENERAL,419,55,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLOOR,31,81,19,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FLOORS,88,81,21,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_HOUSETYPE,139,80,38,110,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WC,206,80,31,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_COSTFROM,276,80,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_FORWHAT,327,80,47,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DISTRICT,407,80,85,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_METRO,52,96,88,125,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DISTANCE,174,96,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_INWHAT,204,96,41,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ADDRESS,277,96,215,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PHONE_YN,42,112,56,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DESCRIPTION,201,112,291,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Сохранить",ID_SAVE,276,132,64,15,BS_FLAT
+    PUSHBUTTON      "Очистить",ID_CLEAR,341,132,64,15,BS_FLAT
+    PUSHBUTTON      "Закрыть",IDCANCEL,414,132,78,15,BS_FLAT
+    PUSHBUTTON      "Добавить",ID_ADD,146,132,64,15,BS_FLAT
+    PUSHBUTTON      "Удалить",ID_DELETE,211,132,64,15,BS_FLAT
+    PUSHBUTTON      "",ID_FIRST,7,132,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_PREV,31,132,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_NEXT,56,132,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_LAST,80,132,23,15,BS_FLAT
+    LTEXT           "Агент:",IDC_STATIC,7,10,22,8
+    LTEXT           "Телефон:",IDC_STATIC,134,9,33,8
+    LTEXT           "Количество комнат:",IDC_STATIC,253,9,69,8
+    GROUPBOX        "Жилая площадь по комнатам (м.кв.)",IDC_STATIC,7,24,373,
+                    53
+    LTEXT           "S кухни:",IDC_STATIC,386,36,31,9
+    LTEXT           "S общая:",IDC_STATIC,386,57,31,9
+    LTEXT           "Этаж:",IDC_STATIC,7,83,20,9
+    LTEXT           "Этажей:",IDC_STATIC,57,83,29,9
+    LTEXT           "С/У:",IDC_STATIC,186,83,18,9
+    LTEXT           "Дом:",IDC_STATIC,117,83,19,9
+    LTEXT           "Цена от:",IDC_STATIC,243,83,30,9
+    LTEXT           "За:",IDC_STATIC,314,83,11,9
+    LTEXT           "Район:",IDC_STATIC,381,83,22,8
+    LTEXT           "М / тр. узел:",IDC_STATIC,7,99,43,8
+    LTEXT           "Расст-е:",IDC_STATIC,143,98,29,9
+    LTEXT           "Адрес:",IDC_STATIC,251,98,24,8
+    LTEXT           "Дополнительные сведения:",IDC_STATIC,103,114,96,9
+    LTEXT           "Телефон:",IDC_STATIC,7,114,33,8
+END
+
+IDD_RFS DIALOGEX 0, 0, 521, 172
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Комнаты на продажу"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_AGENT,31,7,96,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PHONE,169,7,73,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ROOMS,327,7,28,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_R1,19,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R2,55,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R3,91,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R4,127,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R5,163,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R6,199,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R7,235,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R8,271,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R9,307,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R10,343,38,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R11,19,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R12,55,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R13,91,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R14,127,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R15,163,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R16,199,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R17,235,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R18,271,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R19,307,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_R20,343,59,26,12,ES_AUTOHSCROLL | WS_DISABLED | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_SKITCHEN,419,34,34,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WROOMS,59,82,25,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RENTERS,136,81,25,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NEIGHBOURS,198,81,27,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FLOOR,31,99,19,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FLOORS,88,99,21,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_HOUSETYPE,139,98,38,110,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_WC,206,98,31,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_COSTFROM,276,98,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_FORWHAT,327,98,47,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DISTRICT,407,98,85,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_METRO,52,114,88,125,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DISTANCE,174,114,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_INWHAT,204,114,41,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ADDRESS,277,114,215,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PHONE_YN,42,130,56,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DESCRIPTION,201,130,291,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Сохранить",ID_SAVE,276,150,64,15,BS_FLAT
+    PUSHBUTTON      "Очистить",ID_CLEAR,341,150,64,15,BS_FLAT
+    PUSHBUTTON      "Закрыть",IDCANCEL,414,150,78,15,BS_FLAT
+    PUSHBUTTON      "Добавить",ID_ADD,146,150,64,15,BS_FLAT
+    PUSHBUTTON      "Удалить",ID_DELETE,211,150,64,15,BS_FLAT
+    PUSHBUTTON      "",ID_FIRST,7,150,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_PREV,31,150,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_NEXT,56,150,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_LAST,80,150,23,15,BS_FLAT
+    LTEXT           "Агент:",IDC_STATIC,7,10,22,8
+    LTEXT           "Телефон:",IDC_STATIC,134,9,33,8
+    LTEXT           "Количество комнат:",IDC_STATIC,253,9,69,8
+    GROUPBOX        "Жилая площадь по комнатам (м.кв.)",IDC_STATIC,7,24,373,
+                    53
+    LTEXT           "S кухни:",IDC_STATIC,386,36,31,9
+    LTEXT           "Этаж:",IDC_STATIC,7,101,20,9
+    LTEXT           "Этажей:",IDC_STATIC,57,101,29,9
+    LTEXT           "С/У:",IDC_STATIC,186,101,18,9
+    LTEXT           "Дом:",IDC_STATIC,117,101,19,9
+    LTEXT           "Цена от:",IDC_STATIC,243,101,30,9
+    LTEXT           "За:",IDC_STATIC,314,101,11,9
+    LTEXT           "Район:",IDC_STATIC,381,101,22,8
+    LTEXT           "М / тр. узел:",IDC_STATIC,7,117,43,8
+    LTEXT           "Расст-е:",IDC_STATIC,143,116,29,9
+    LTEXT           "Адрес:",IDC_STATIC,251,116,24,8
+    LTEXT           "Дополнительные сведения:",IDC_STATIC,103,132,96,9
+    LTEXT           "Телефон:",IDC_STATIC,7,132,33,8
+    LTEXT           "Всего комнат:",IDC_STATIC,7,83,50,9
+    LTEXT           "Съемщиков:",IDC_STATIC,90,83,46,9
+    LTEXT           "Соседей:",IDC_STATIC,165,83,32,9
+END
+
+IDD_DICTIONARY DIALOG DISCARDABLE  0, 0, 206, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Изменение значений"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Закрыть",IDOK,149,165,50,14
+    PUSHBUTTON      "Изменить",ID_CHANGE,103,165,40,14
+    LISTBOX         IDC_LIST,7,24,192,131,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DICT,77,7,122,133,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Словарь:",IDC_STATIC,41,7,33,10
+    PUSHBUTTON      "Добавить",ID_ADD,58,165,40,14
+    PUSHBUTTON      "Удалить",ID_DELETE,7,165,40,14
+END
+
+IDD_DICED DIALOG DISCARDABLE  0, 0, 248, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Введите новое значение"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,191,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,24,50,14
+    EDITTEXT        IDC_VALUE,7,17,177,12,ES_AUTOHSCROLL
+END
+
+IDD_EXPINT DIALOG DISCARDABLE  0, 0, 397, 217
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Экспорт данных в Интернет"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Закрыть",IDCANCEL,331,92,50,14
+    GROUPBOX        "Листинги:",IDC_STATIC,16,16,365,67
+    CONTROL         "Квартиры на продажу",IDC_FFS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,32,127,11
+    CONTROL         "Комнаты на продажу",IDC_RFS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,47,125,11
+    CONTROL         "Квартиры в строящихся домах",IDC_FIBH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,62,128,11
+    CONTROL         "Квартиры в аренду",IDC_FFL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,209,32,127,11
+    CONTROL         "Комнаты в аренду",IDC_RFL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,209,47,127,11
+    PUSHBUTTON      "Отправить >>",ID_SEND,15,92,196,14
+    GROUPBOX        "Ход отправки:",IDC_STATIC,15,115,366,89
+    LISTBOX         IDC_LOG,22,151,352,47,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    22,130,352,11
+END
+
+IDD_COMFS DIALOGEX 0, 0, 521, 158
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Коммерческая недвижимость: продажа"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_AGENT,31,7,96,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_APHONE,169,7,73,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OBJ_TYPE,284,7,96,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SGENERAL,41,23,39,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPLOT,127,23,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLOOR,202,23,19,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FLOORS,259,23,21,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_ENTRANCE,312,23,68,110,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CONDITION,52,39,65,79,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CEILINGHEIGHT,168,39,37,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DOORWAY,250,39,64,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_COSTFROM,40,55,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_FORWHAT,91,55,47,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DISTRICT,172,55,85,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ADDRESS,292,55,215,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCRIPTION,105,71,402,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_APPOINTMENT,56,87,451,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Телефон",IDC_PHONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,103,66,12
+    CONTROL         "Электричество",IDC_ELECTRICITY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,103,67,12
+    CONTROL         "Водоснабжение",IDC_WATERSUPPLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,178,103,71,12
+    CONTROL         "Отопление",IDC_HEATING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,270,103,53,12
+    CONTROL         "Канализация",IDC_SEWERAGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,345,103,65,12
+    CONTROL         "Парковка",IDC_PARKING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,119,65,12
+    CONTROL         "Охранная сигнализация",IDC_GUARD_S,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,91,118,153,12
+    CONTROL         "Пожарная сигнализация",IDC_FIRE_S,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,270,117,153,13
+    PUSHBUTTON      "Сохранить",ID_SAVE,276,136,64,15,BS_FLAT
+    PUSHBUTTON      "Очистить",ID_CLEAR,341,136,64,15,BS_FLAT
+    PUSHBUTTON      "Добавить",ID_ADD,146,136,64,15,BS_FLAT
+    PUSHBUTTON      "Удалить",ID_DELETE,211,136,64,15,BS_FLAT
+    PUSHBUTTON      "",ID_FIRST,7,136,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_PREV,31,136,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_NEXT,56,136,23,15,BS_FLAT
+    PUSHBUTTON      "",ID_LAST,80,136,23,15,BS_FLAT
+    PUSHBUTTON      "Закрыть",IDCANCEL,414,136,78,15,BS_FLAT
+    LTEXT           "Агент:",IDC_STATIC,7,10,22,8
+    LTEXT           "Телефон:",IDC_STATIC,134,9,33,8
+    LTEXT           "Объект:",IDC_STATIC,253,9,28,8
+    LTEXT           "S общая:",IDC_STATIC,7,25,31,9
+    LTEXT           "Этаж:",IDC_STATIC,178,25,20,10
+    LTEXT           "Этажей:",IDC_STATIC,228,25,29,10
+    LTEXT           "Состояние:",IDC_STATIC,7,41,39,10
+    LTEXT           "Вход:",IDC_STATIC,290,24,19,11,SS_CENTERIMAGE
+    LTEXT           "Цена от:",IDC_STATIC,7,57,30,10
+    LTEXT           "За:",IDC_STATIC,78,57,11,10
+    LTEXT           "Район:",IDC_STATIC,145,57,22,10
+    LTEXT           "Адрес:",IDC_STATIC,265,57,24,9
+    LTEXT           "Дополнительные сведения:",IDC_STATIC,7,73,96,9
+    LTEXT           "S участка:",IDC_STATIC,88,25,36,9
+    LTEXT           "H потолка:",IDC_STATIC,125,41,38,9
+    LTEXT           "Подъезд:",IDC_STATIC,213,41,33,10
+    LTEXT           "Назначение:",IDC_STATIC,7,89,44,10
+    PUSHBUTTON      "Изображения",ID_IMAGES,436,7,78,15,BS_FLAT
+    LTEXT           "Количество:",IDC_STATIC,436,26,43,9
+    EDITTEXT        IDC_IMNUM,482,26,25,10,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_IMPROP DIALOG DISCARDABLE  0, 0, 593, 322
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Присоединенные изображения"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Закрыть",IDOK,536,301,50,14
+    LISTBOX         IDC_LBXST,8,18,149,272,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Список изображений:",IDC_STATIC,7,7,151,9
+    DEFPUSHBUTTON   "Добавить",ID_ADD,71,301,64,14
+    DEFPUSHBUTTON   "Удалить",ID_DEL,7,301,64,14
+    SCROLLBAR       IDC_SCROLLBAR1,577,7,9,284,SBS_VERT
+    DEFPUSHBUTTON   "Открыть",ID_OPEN,169,301,50,14
+END
+
+IDD_IMS DIALOG DISCARDABLE  0, 0, 241, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Свойства изображения"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Сохранить",IDOK,184,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,184,27,50,14
+    CONTROL         "Изображение по умолчанию",IDC_DEF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,114,16
+    GROUPBOX        "Тип изображения",IDC_STATIC,7,23,111,44
+    LTEXT           "Комментарии:",IDC_STATIC,7,72,207,11
+    EDITTEXT        IDC_COM,7,84,227,34,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+    CONTROL         "Планировка",IDC_PLAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,35,88,10
+    CONTROL         "Фотография",IDC_PHOTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,50,80,10
+END
+
+IDD_PRESS_EXPORT DIALOG DISCARDABLE  0, 0, 277, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Экспорт данных в печатные издания"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Закрыть",IDOK,220,130,50,14
+    LISTBOX         IDC_LIST1,15,15,195,129,LBS_SORT | LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Экспорт",ID_EXP,220,15,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_CERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_FIBH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_FFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_RFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DICTIONARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DICED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_EXPINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_COMFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_IMPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 586
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+
+    IDD_IMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_PRESS_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_LISTINGS_FLATS_FS
+    BUTTON      ID_LISTINGS_ROOMS_FS
+    BUTTON      ID_LISTINGS_FLATSINBH
+    SEPARATOR
+    BUTTON      ID_RECORD_ADD
+    BUTTON      ID_RECORD_EDIT_CUR
+    BUTTON      ID_RECORD_DELETE_CUR
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_COMMERCE TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_LISTINGS_COM_FS
+    BUTTON      ID_LISTINGS_COM_FR
+    SEPARATOR
+    BUTTON      ID_RECORD_ADD
+    BUTTON      ID_RECORD_EDIT_CUR
+    BUTTON      ID_RECORD_DELETE_CUR
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Dark Unicorn InterCom RE\n\nInform\n\n\nInformer.Document\nInform Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Dark Unicorn InterCom RE"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_SN         "Запись: не выбрана / 500"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ID                   "ID"
+    ID_DISTRICT             "Район"
+    ID_ADDRESS              "Адрес"
+    ID_AGENT                "Агент"
+    ID_ROOMS                "Кол-во комнат"
+    ID_METRO                "Метро"
+    ID_FLOORS               "Этаж / этажей"
+    ID_SGENERAL             "Общая площадь"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SKITCHEN             "Площадь кухни"
+    ID_SROOMS               "Жилая площадь"
+    ID_HTYPE                "Дом"
+    ID_WC                   "С/У"
+    ID_PRICE                "Цена"
+    ID_B_END                "Окончание строительства"
+    ID_DESCRIPTION          "Описание"
+    ID_A_PHONE              "Телефон аг-ва"
+    ID_RRN                  "Комн./съемщ./сосед."
+    ID_PHONE                "Телефон"
+    ID_OBJ_TYPE             "Тип"
+    ID_ENTRANCE             "Вход"
+    ID_CONDITION            "Состояние"
+    ID_COMMUNICATIONS       "Коммуникации"
+    ID_SPLOT                "Площадь участка"
+    ID_DOORWAY              "Подъезд"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LISTINGS_FLATS_FS    "Листинг квартир на продажу\nКвартиры на продажу"
+    ID_RECORD_EDIT_CUR      "Редактировать текущую запись\nРедактировать текущую запись"
+    ID_RECORD_ADD           "Добавить запись\nДобавить запись"
+    ID_RECORD_DELETE_CUR    "Удалить текущую запись\nУдалить текущую запись"
+    ID_LISTINGS_ROOMS_FS    "Листинг комнат на продажу\nКомнаты на продажу"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LISTINGS_FLATSINBH   "Листинг квартир в строящихся домах на продажу\nКвартиры в строящихся домах"
+    ID_LISTINGS_COM_FS      "Листинг объектов на продажу\nОбъекты на продажу"
+    ID_LISTINGS_COM_FR      "Листинг объектов в аренду\nОбъекты в аренду"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CEILINGHEIGHT        "Высота потолка"
+    ID_ELECTRICITY          "Электричество"
+    ID_WATERSUPPLY          "Водоснабжение"
+    ID_HEATING              "Отопление"
+    ID_SEWERAGE             "Канализация"
+    ID_APPOINTMENT          "Назначение"
+    ID_PARKING              "Парковка"
+    ID_GUARD_S              "Охранная сигнализация"
+    ID_FIRE_S               "Пожарная сигнализация"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Informer.ico"
+IDR_INFORMTYPE          ICON    DISCARDABLE     "res\\InformerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\InterCom.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
